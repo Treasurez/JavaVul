@@ -44,7 +44,7 @@ public class FastjsonController {
                 "            });\n" +
                 "\n" +
                 "            // 发送 POST 请求\n" +
-                "            fetch(\"/fastjson124-process\", {\n" +
+                "            fetch(\"/fastjson1.2.24-process\", {\n" +
                 "                method: \"POST\",\n" +
                 "                headers: {\n" +
                 "                    \"Content-Type\": \"application/json\"\n" +
@@ -66,6 +66,7 @@ public class FastjsonController {
 
     @PostMapping("/fastjson1.2.24-process")
     public String fastjson1_2_24_process(@RequestBody String data) {
+        System.out.println("------11111");
         JSONObject jsonObject = JSONObject.parseObject(data);
         // 处理 jsonObject
         return "Processed: " + jsonObject;
