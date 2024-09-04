@@ -1,6 +1,6 @@
 import os
 
-host = os.environ.get('HOST', '192.168.0.9')
+host = os.environ.get('HOST', '10.1.10.205')
 
 # 定义请求的配置
 requests_config = {

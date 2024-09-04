@@ -213,7 +213,7 @@ services:
       - JAVA_TOOL_OPTIONS=-javaagent:/agent/agent.jar
       - JAVA_OPTS=-Xms512m -Xmx1024m
     ports:
-      - "9997:8080"      
+      - "9997:8080"
     depends_on:
       - mysql
     volumes:
@@ -227,7 +227,7 @@ services:
       context: ./druid_authorized
       dockerfile: Dockerfile_local
     ports:
-      - "9996:8080"      
+      - "9996:8080"
     depends_on:
       - mysql
     volumes:
@@ -302,7 +302,7 @@ services:
       context: ./base_vul
       dockerfile: Dockerfile_local
     ports:
-      - "9991:8080"      
+      - "9991:8080"
     depends_on:
       - mysql
     volumes:
@@ -317,7 +317,7 @@ services:
       context: ./base_vul_repair
       dockerfile: Dockerfile_local
     ports:
-      - "9990:8080"      
+      - "9990:8080"
     depends_on:
       - mysql
     volumes:
@@ -332,7 +332,7 @@ services:
       context: ./HSQLDB
       dockerfile: Dockerfile_local
     ports:
-      - "9989:8080"      
+      - "9989:8080"
     volumes:
       - ./agent:/agent/
     environment:
@@ -345,7 +345,7 @@ services:
       context: ./Hibernate
       dockerfile: Dockerfile_local
     ports:
-      - "9988:8080"      
+      - "9988:8080"
     volumes:
       - ./agent:/agent/
     environment:
@@ -412,9 +412,9 @@ services:
       context: ./index
       dockerfile: Dockerfile
     ports:
-      - "5000:5000"      
+      - "5000:5000"
     environment:
-      - HOST=192.168.0.9
+      - HOST=10.1.10.201
 
   mysql:
     image: mysql:5.7

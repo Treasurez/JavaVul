@@ -12,7 +12,7 @@ public class Student {
     private HashMap<String,String> _properties;
 
     public Student() {
-        System.out.println("无参构造函数");
+        System.out.println("调用无参构造函数");
     }
 
     public String getName() {
